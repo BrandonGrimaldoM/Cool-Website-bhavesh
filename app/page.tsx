@@ -4,13 +4,13 @@ export default function Home() {
   return (
     <>
       <Navegation />
-      <main className="flex relative h-screen overflow-y-hidden">
+      <main className="flex relative h-screen overflow-y-hidden max-lg:hidden">
         <div className="w-1/2 flex justify-end">
           <div className="w-4/6 h-screen bg-white relative flex items-center justify-center">
-            <p className="transform -rotate-90 text-[144px] absolute top-0 -translate-x-60">
+            <p className="transform -rotate-90 text-[144px] absolute top-0 2xl:-translate-x-60 lg:-translate-x-[91px]">
               13507958329
             </p>
-            <div className="bg-[#AA243D] w-[900px] h-[900px] rounded-full absolute z-40 overflow-hidden">
+            <div className="bg-[#AA243D] 2xl:w-[900px] 2xl:h-[900px] lg:w-[600px] lg:h-[600px] rounded-full absolute z-40 overflow-hidden">
               <div className="relative">
                 <p className="transform -rotate-90 text-[144px] text-white absolute top-0 -translate-x-[102px] translate-y-[21px]">
                   13507958329
@@ -20,7 +20,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <p className="transform rotate-90 text-[144px] absolute bottom-0 translate-x-60">
+            <p className="transform rotate-90 text-[144px] absolute bottom-0 2xl:translate-x-60 lg:translate-x-[91px]">
               13507958329
             </p>
             <img src="/images/girl.png" alt="girl" className="absolute bottom-0 z-50 w-[400px] -translate-x-20 translate-y-10" />
@@ -28,9 +28,9 @@ export default function Home() {
           </div>
         </div>
         <section className="w-1/2 flex justify-center items-center relative overflow-x-hidden">
-          <article>
+          <article className="lg:translate-x-10">
             <h1 className="text-6xl">WHY NOT NOW!</h1>
-            <p className="text-2xl w-[561px] leading-7">
+            <p className="text-2xl 2xl:w-[561px] lg:w-[250px] leading-7 ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida
               pellentesque malesuada volutpat adipiscing sed. Enim eu morbi
               vivamus mauris, ac nunc, consectetur. Porttitor commodo integer
@@ -40,7 +40,7 @@ export default function Home() {
             </p>
           </article>
 
-          <div className="absolute -right-[480px]">
+          <div className="absolute -right-[480px] 2xl:block lg:hidden">
             <p className="text-2xl w-[561px] leading-7 pb-7">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida
               pellentesque malesuada volutpat adipiscing sed. Enim eu morbi
